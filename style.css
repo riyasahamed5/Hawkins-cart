@@ -21,6 +21,13 @@
      border-radius: 5px;
 }
 
+.brand-name {
+    color: red;
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 
 .home-content-cont{
     margin-top: 40px;
@@ -70,4 +77,40 @@
     align-items: center;
     justify-content: space-evenly;
     margin-top: 50px;
+}
+.login-form{
+    background-color:white;
+    padding:20px;
+    margin-top: 50px;
+    border:1px solid black;
+    border-radius: 10px;
+    box-shadow: 12px 20px 20px rgba(207, 0, 0, 0.15);
+   
+}
+.login-cont{
+    
+width:80%;
+margin:auto;
+}
+
+.electronic-prod-img-cont{
+    background-color:white;
+    border-radius: 12px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.electronic-prod-img-cont:hover {
+    transform: translateY(-8px);
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.25);
+}
+
+.electronic-prod-img{
+    width:90%;
+     border:1px solid red;
+     margin-bottom:20px;
+
 }
