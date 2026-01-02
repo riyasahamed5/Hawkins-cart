@@ -17,8 +17,8 @@
 <body>
 
 <div class="overall-container">
-<nav class="navbar navbar-expand-lg navbar-light bg-info">
-  <a class="navbar-brand d-flex align-items-center" href="#">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand d-flex align-items-center" href="index.html">
     <img src="logo.png" alt="Hawkins Logo" width="100" height="80" class="mr-2">
   </a>
 
@@ -44,7 +44,7 @@
       </li>
 
       <li class="nav-item dropdown active">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+        <a class="nav-link dropdown-toggle" href="" id="navbarDropdown"
            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Categories
         </a>
@@ -56,13 +56,33 @@
         </div>
       </li>
 
+             <div class="box">
+                  <div class="cart-count">0</div>
+                  <button class="ml-2" style="border:0px;" id="cart-icon">
+                    <i class="fa-solid fa-basket-shopping" style="color: #2a1ed2;"></i>
+                  </button> 
+             </div>
+             
+             <div class="cart">
+                <h4 class="cart-title">Cart Items</h4>
+                <button id="close-icon">X</button>
+        
+                <div class="cart-content">
+
+                  <!-- <div class="total">
+                    <div class="total-title">Total Amount</div>
+                    <div class="total-price">Rs.0</div>
+                  </div> -->
+                </div>
+            </div>
+
     </ul>
   </div>
 </nav>
 
-<div>
-    <h1 class="text-center mt-4">
-        <strong style="color:rgb(194, 21, 2);"> ELECTRONICS</strong>
+<div class="electronics-bg">
+    <h1 class="text-center pt-4">
+        <strong style="color:rgb(255, 66, 45);" class="title-card-effect"> ELECTRONICS</strong>
     </h1>
 
   <div class="container mt-5" >
@@ -70,69 +90,65 @@
         <div class="col-12 col-sm-6 col-md-4 mb-4">
             <div class="electronic-prod-img-cont">
                 <img src="mobile.png"  class="electronic-prod-img"/>
-                <h4>Mobiles</h4>
-                <p>Rs.30,000</p>
+                <h4 class="prod-title">Mobiles</h4>
+                <p  class="prod-price">Rs.30,000</p>
                 <button class="btn btn-primary m-2">Buy Now</button>
-                <button class="btn btn-outline-warning">Add to Cart</button>
+                <button class="btn btn-outline-warning add-to-cart">Add to Cart</button>
             </div>
         </div>
 
         <div class="col-12 col-sm-6 col-md-4 mb-4 ">
             <div class="electronic-prod-img-cont">
                 <img src="laptops.png"  class="electronic-prod-img"/>
-                <h4>Laptops</h4>
-                <p>Rs.85,000</p>
+                <h4 class="prod-title">Laptops</h4>
+                <p class="prod-price">Rs.85,000</p>
                 <button class="btn btn-primary m-2">Buy Now</button>
-                <button class="btn btn-outline-warning">Add to Cart</button>
+                <button class="btn btn-outline-warning add-to-cart">Add to Cart</button>
             </div>
          </div>  
 
          <div class="col-12 col-sm-6 col-md-4 mb-4 ">
             <div class="electronic-prod-img-cont">
                 <img src="watch.png" class="electronic-prod-img"/>
-                <h4>Smart Watches</h4>
-                <p>Rs.5,999</p>
+                <h4 class="prod-title">Smart Watches</h4>
+                <p class="prod-price">Rs.5,999</p>
                 <button class="btn btn-primary m-2">Buy Now</button>
-                <button class="btn btn-outline-warning">Add to Cart</button>
+                <button class="btn btn-outline-warning add-to-cart">Add to Cart</button>
             </div>
         </div>  
 
          <div class="col-12 col-sm-6 col-md-4 mb-4 ">
             <div class="electronic-prod-img-cont">
                 <img src="tv.png"  class="electronic-prod-img"/>
-                <h4>LED Tv</h4>
-                <p>Rs.35,000</p>
+                <h4 class="prod-title">LED Tv</h4>
+                <p class="prod-price">Rs.35,000</p>
+                
                 <button class="btn btn-primary m-2">Buy Now</button>
-                <button class="btn btn-outline-warning">Add to Cart</button>
+                <button class="btn btn-outline-warning add-to-cart">Add to Cart</button>
             </div>
         </div>
 
        <div class="col-12 col-sm-6 col-md-4 mb-4 ">
          <div class="electronic-prod-img-cont">
             <img src="fridge.png" class="electronic-prod-img"/>
-            <h4> Refrigerator</h4>
-            <p>Rs.69,000</p>
+            <h4 class="prod-title">Refrigerator</h4>
+            <p class="prod-price">Rs.69,000</p>
             <button class="btn btn-primary m-2">Buy Now</button>
-            <button class="btn btn-outline-warning">Add to Cart</button>
+            <button class="btn btn-outline-warning add-to-cart">Add to Cart</button>
         </div>
        </div>
 
        <div class="col-12 col-sm-6 col-md-4 mb-4 ">
          <div class="electronic-prod-img-cont">
             <img src="washing-mc.png" class="electronic-prod-img"/>
-            <h4> Washing Machine</h4>
-            <p>Rs.37,790</p>
+            <h4 class="prod-title">Washing Machine</h4>
+            <p class="prod-price">Rs.37,790</p>
             <button class="btn btn-primary m-2">Buy Now</button>
-            <button class="btn btn-outline-warning">Add to Cart</button>
+            <button class="btn btn-outline-warning add-to-cart">Add to Cart</button>
         </div>
        </div>
-         
-       
-
-    
+             
         </div>
-            
-            
 
         
         </div>
@@ -144,7 +160,7 @@
                             <a href="index.html" class="anchor2">Home</a>
                             <a href="products.html" class="anchor2">Products</a> 
                         </div>
-                    
+                    <hr>
                             <h1 style="text-align:center; margin-top:50px;">Follow Us on</h1>
                             <div style="display:flex; justify-content: space-evenly;">
                             <div>
@@ -169,13 +185,6 @@
   </div>
     
 
-
-
-
-
-
-           
-
-
+<script src="script.js"></script>
 </body>
 </html>

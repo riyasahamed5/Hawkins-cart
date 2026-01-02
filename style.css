@@ -1,4 +1,5 @@
 
+
 .logo-style{
     width: 140px;
 }
@@ -60,6 +61,16 @@
      margin-bottom: 20px;
      text-align:justify;
 }
+.title-card-effect{
+    color:rgb(255, 66, 45);
+}
+.title-card-effect:hover{
+    background-color:rgb(200, 255, 0);
+    border-radius:7px;
+    transition: all 0.5s ease;
+    padding:3px;
+}
+
 
 .prod-head-style{
     font-size: 30px;
@@ -88,10 +99,17 @@
    
 }
 .login-cont{
-    
+   
 width:80%;
 margin:auto;
+transition:transform 0.3s ease;
+
 }
+.login-cont:hover{
+    transform :scale(1.1);
+}
+
+
 
 .electronic-prod-img-cont{
     background-color:white;
@@ -100,11 +118,11 @@ margin:auto;
     padding: 20px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
     margin-bottom: 20px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
 .electronic-prod-img-cont:hover {
-    transform: translateY(-8px);
+    transform: translateY(-8px); 
     box-shadow: 10px 10px 20px rgba(0,0,0,0.25);
 }
 
@@ -113,4 +131,92 @@ margin:auto;
      border:1px solid red;
      margin-bottom:20px;
 
+}
+.electronics-bg{
+    background-image: url("Futuristic-Electronics.gif");
+    
+}
+.fashion-bg{
+    background-image: url("fashion-bg.gif");
+    background-size: cover;
+}
+
+.groceries-bg{
+    background-image: url("grocery-bg.gif");
+   
+}
+
+.cart-count{
+    z-index:99;
+    position:absolute;
+    color:black;
+}
+
+.cart{
+    position: fixed;
+    top:0;
+    right:-100%;
+    width:30%;
+    height:100%;
+    background-color:rgb(59, 188, 243);
+    border-width:1px solid black;
+    overflow-y:auto;
+    overflow-x:hidden;
+    padding:20px;
+    border-radius: 10px;
+    z-index:100;
+    color:black;
+
+
+}
+.cart-active{
+    right:0;
+    transition:0.5s ;
+}
+
+#close-icon{
+    position:absolute;
+    top:10px;
+    right:10px;
+    font-size: 25px;
+    color:rgb(0, 0, 0);
+    border:0px;
+    background-color:transparent;
+}
+
+.cart-box{
+    display: grid;
+    grid-template-columns: 40% 30% 30%;
+    gap:1rem;
+    align-items: center;
+    margin-top:10px;
+    padding:5px 10px 12px 12px;
+    border-bottom: 1.5px solid black;
+    color:blueviolet;
+}
+.cart-img{
+    width:75px;
+    height:75px;
+    border-radius: 10%;
+}
+.cart-price{
+     font-size: 15px;
+     color:black;
+}
+.cart-amt{
+    font-size: 15px;
+     color:rgb(249, 249, 249);
+}
+.cart-quantity{
+    width:2.4rem;
+    outline: none;
+    text-align: center;
+    font-size: 1rem;
+
+}
+
+.total{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }

@@ -17,8 +17,8 @@
 <body>
 
 <div class="overall-container">
-<nav class="navbar navbar-expand-lg navbar-light bg-info">
-  <a class="navbar-brand d-flex align-items-center" href="#">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand d-flex align-items-center" href="index.html">
     <img src="logo.png" alt="Hawkins Logo" width="100" height="80" class="mr-2">
   </a>
 
@@ -43,6 +43,7 @@
         <a class="nav-link" href="login.html">Login</a>
       </li>
 
+
       <li class="nav-item dropdown active">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -50,19 +51,40 @@
         </a>
 
         <div class="dropdown-menu ">
-          <a class="dropdown-item active" href="electronics.html">Electronics</a>
-          <a class="dropdown-item " href="#">Fashion</a>
-          <a class="dropdown-item " href="#">Groceries</a>
+          <a class="dropdown-item" href="electronics.html">Electronics</a>
+          <a class="dropdown-item " href="fashion.html">Fashion</a>
+          <a class="dropdown-item active" href="groceries.html">Groceries</a>
         </div>
-      </li>
+       </li>
+
+            <div class="box">
+                <div class="cart-count">0</div>
+                <button class="ml-2" style="border:0px;" id="cart-icon">
+                  <i class="fa-solid fa-basket-shopping" style="color: #2a1ed2;"></i>
+                </button> 
+             </div> 
+
+            <div class="cart">
+                <h4 class="cart-title">Cart Items</h4>
+                <button id="close-icon">X</button>
+        
+                <div class="cart-content">
+
+                  <!-- <div class="total">
+                    <div class="total-title">Total Amount</div>
+                    <div class="total-price">Rs.0</div>
+                  </div> -->
+                </div>
+            </div>  
+        </div>         
 
     </ul>
   </div>
 </nav>
 
-<div> 
-    <h1 class="text-center mt-4">
-        <strong style="color:rgb(17, 163, 7);"> GROCERIES</strong>
+<div class="groceries-bg"> 
+    <h1 class="text-center pt-4">
+        <strong style="color:rgb(0, 0, 0);" class="title-card-effect"> GROCERIES</strong>
     </h1>
 
   <div class="container mt-5" >
@@ -70,30 +92,30 @@
         <div class="col-12 col-sm-6 col-md-4 mb-4">
             <div class="electronic-prod-img-cont">
                 <img src="rice.png"  class="electronic-prod-img"/>
-                <h4>Rice (25KG)</h4>
-                <p>Rs.2,000</p>
+                <h4 class="prod-title">Rice (25KG)</h4>
+                <p class="prod-price">Rs.2,000</p>
                 <button class="btn btn-primary m-2">Buy Now</button>
-                <button class="btn btn-outline-warning">Add to Cart</button>
+                <button class="btn btn-outline-warning add-to-cart">Add to Cart</button>
             </div>
         </div>
 
         <div class="col-12 col-sm-6 col-md-4 mb-4 ">
             <div class="electronic-prod-img-cont">
                 <img src="oil.png"  class="electronic-prod-img"/>
-                <h4>Cooking Oil</h4>
-                <p>Rs.1650</p>
+                <h4 class="prod-title">Cooking Oil</h4>
+                <p class="prod-price">Rs.1650</p>
                 <button class="btn btn-primary m-2">Buy Now</button>
-                <button class="btn btn-outline-warning">Add to Cart</button>
+                <button class="btn btn-outline-warning add-to-cart">Add to Cart</button>
             </div>
          </div>  
 
          <div class="col-12 col-sm-6 col-md-4 mb-4 ">
             <div class="electronic-prod-img-cont">
                 <img src="dal.png" class="electronic-prod-img"/>
-                <h4>Toor Dal</h4>
-                <p>Rs.200</p>
+                <h4 class="prod-title">Toor Dal</h4>
+                <p class="prod-price">Rs.200</p>
                 <button class="btn btn-primary m-2">Buy Now</button>
-                <button class="btn btn-outline-warning">Add to Cart</button>
+                <button class="btn btn-outline-warning add-to-cart">Add to Cart</button>
             </div>
         </div>  
 
@@ -143,6 +165,6 @@
 
            
 
-
+<script src="script.js"></script>
 </body>
 </html>
