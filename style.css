@@ -4,6 +4,10 @@
     width: 140px;
 }
 
+.navbar{
+    position: fixed;
+}
+
 .nav-item{
     font-size: 20px;
     color: black;
@@ -156,7 +160,7 @@ transition:transform 0.3s ease;
     position: fixed;
     top:0;
     right:-100%;
-    width:30%;
+    width:80%;
     height:100%;
     background-color:rgb(59, 188, 243);
     border-width:1px solid black;
@@ -192,7 +196,7 @@ transition:transform 0.3s ease;
     margin-top:10px;
     padding:5px 10px 12px 12px;
     border-bottom: 1.5px solid black;
-    color:blueviolet;
+    color:rgb(72, 31, 110);
 }
 .cart-img{
     width:75px;
